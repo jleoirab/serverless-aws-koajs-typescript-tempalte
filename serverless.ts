@@ -1,6 +1,6 @@
 import type { AWS } from '@serverless/typescript';
 
-import hello from '@functions/hello';
+import api from '@functions/api';
 
 const serverlessConfiguration: AWS = {
   service: 'aws-koajs-typescript-template',
@@ -28,7 +28,7 @@ const serverlessConfiguration: AWS = {
     lambdaHashingVersion: '20201221',
   },
   // import the function via paths
-  functions: { hello },
+  functions: { api },
 };
 
 module.exports = serverlessConfiguration;
